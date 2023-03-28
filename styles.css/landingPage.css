@@ -1,0 +1,472 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.main{
+
+  height: 100vh;
+
+}
+.padre{
+
+  width: 100%;
+  height: 100%;
+
+}
+.hijo--cabecera{
+
+  display: flex;
+  flex-direction:row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 188, 220);
+  width: 100%;
+  padding: 1.2%;
+  height: 8%;
+}
+
+          .hijo--cabecera a{
+
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            color:  rgb(0, 0, 0);
+            width: 20%;
+          }
+          .hijo--cabecera a:hover{
+
+            font-weight: bold;
+            font-style: oblique;
+
+          }
+.titulo{
+
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  font-family: Helvetica;
+/*   font-style: italic; */
+  font-size: 40px;
+  color:  rgb(0, 0, 0);
+  margin: 0 auto;
+  padding-top: 1%;
+  width: 90%;
+  height: 20%;
+}
+.hijo--titulo{
+
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  text-align: center;
+  font-family: Helvetica;
+  font-style: italic;
+  font-size: 30px;
+  color:  rgb(0, 0, 0);
+  margin: 0 auto;
+  padding-top: 1%;
+  width: 90%;
+  height: 10%;
+}
+.footer{
+
+  background-color:  rgb(0, 255, 8);
+  color: rgb(0, 0, 0);
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 10px;
+ /*  border: 6px solid white; */
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  width: 70%;
+  height: 6%;   
+  animation: fromRigtht 1000ms linear;/* animación */
+}
+           .texto--fotografia:hover{
+
+                    color: rgb(255, 188, 220);
+           }
+
+          @keyframes fromRigtht{ /* para que aparezca desde derecha (X) */
+                   from{
+                        transform: translateX(200%);
+                      }
+                    to{
+                         transform: translateX(0%);
+                      }
+          }
+          .footer2{
+
+            background-color:  rgb(0, 255, 8);
+            color:black;
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            text-decoration: none;
+            align-items: center;
+            font-family: Helvetica;
+            font-weight: bold;
+            font-size: 16px;
+            border-radius: 10px;
+            margin: 0 auto;
+            margin-bottom: 30px;
+
+            width: 70%;
+            height: 6%;   
+            animation: fromRigtht 1000ms linear;/* animación */
+          }
+                     .texto--fotografia:hover{
+          
+                              color: rgb(255, 188, 220);
+                     }
+          
+                    @keyframes fromRigtht{ /* para que aparezca desde derecha (X) */
+                             from{
+                                  transform: translateX(200%);
+                                }
+                              to{
+                                   transform: translateX(0%);
+                                }
+                    }
+.hijo--footer{
+
+  background-color: rgb(255, 188, 220);
+  color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  text-decoration: none;
+  align-items: center;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 15px;
+ /*  border: 6px solid white; */
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  width: 50%;
+  height: 6%;   
+  animation: fromRigtht 1000ms linear;/* animación */
+}
+           .texto--fotografia:hover{
+
+                    color: rgb(255, 188, 220);
+           }
+
+          @keyframes fromRigtht{ /* para que aparezca desde derecha (X) */
+                   from{
+                        transform: translateX(200%);
+                      }
+                    to{
+                         transform: translateX(0%);
+                      }
+          }
+      .ofertas{
+        color:rgb(0, 255, 8);
+        font-family: Georgia, 'Times New Roman', Times, serif;
+      }
+      .hijo--footer:hover{
+        color: black;
+        font-style: oblique;
+      }
+/* CAJA */
+.caja{
+  display: flex;
+  position:relative;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+  height: 78%;
+  /* border: 6px solid rgb(0, 26, 255); */
+  color: black;
+  background-color: rgb(255, 255, 255);
+}
+            .fotografia{
+
+              display: flex;
+              flex-direction:row;
+              justify-content: space-between;
+              width: 100%;
+              height: 100%;
+            }
+            .texto--fotografia{ /* portada */
+            
+              position: absolute;
+              align-content: center;
+              display: flex;
+              justify-content: center;
+              margin: 0 auto;
+              padding-top:30% ;
+              text-align: left;
+              font-style: oblique;
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 60px;
+              line-height: 60px;
+              color: rgb(255, 255, 255);
+            
+              width: 90%;
+              height: 90%;
+                /* ANIMACIÓN */
+               animation: showText 5s linear;
+            }
+                  @keyframes showText{
+                  0%{
+                        transform: translateX(-50%);
+                         opacity: 1; /* siempre visible */
+                    }
+                  50%{
+                         transform: translateX(50%) scale(1,1);
+                         opacity: 1; 
+                      }
+                  75%{
+                         transform: translateX(100%) scale(1,1);
+                         text-shadow: none;
+                         color: transparent;
+                         opacity: 0;  /* se va a ocultar */
+                      }
+                  100%{
+                         transform: translateX(0%) scale(1,1);
+                         color: white;
+                         opacity: 1; 
+                      }
+                  }
+                  .texto--fotografia:hover{
+                    color:rgb(0, 255, 8);
+                  }
+                
+
+              .fotografia_croacia{/* con texto / Croacia */
+
+                display: flex;
+                flex-direction:row;
+                justify-content: space-around;
+                width: auto;
+                height: 90%;
+              }
+              .texto--fotografia2{
+
+                /*  position: absolute; */
+                 display: flex;
+                 justify-content: center;
+                 padding-left: 3%;
+                 text-align: left;
+                 font-style: oblique;
+                 font-family: Georgia;
+                 line-height: 135%;
+                 font-size: 110%;
+                 color:rgb(0, 0, 0);
+                 background-color: rgb(255, 255, 255);
+                 width: auto;
+                 height: 90%;
+               }
+.caja2{
+    display: flex;
+    position:relative;
+    flex-direction:row;
+    justify-content: left;
+    margin: 2%;
+
+
+    width: 96%;
+    height: 80%;
+              
+    /* border: 10px solid rgb(0, 255, 8); */
+    color: black;
+    background-color: rgb(249, 231, 246);
+}
+
+.hijo--titulo2{
+
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction:row;
+  justify-content: right;
+  text-decoration: none;
+  align-items: center;
+  font-family: Georgia;
+  font-size: small;
+  color:  rgb(0, 0, 0);
+
+  width: 95%;
+  height: 8%;
+}
+
+.texto--fotografia3{
+
+  position: absolute;
+  flex-direction:column;
+  justify-content: left;
+  display: flex;
+  padding-top: 22%;
+  padding-left: 10%;
+  text-align: left;
+  font-style: oblique;
+  font-family: Georgia;
+  font-size: 130%;
+  color: rgb(0, 0, 0);
+
+  width: 50%;
+  height: 90%;
+}
+.fotografia2{
+  display: flex;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+.fotografia3{
+  display: flex;
+  align-content: center;
+  width: 100%;
+  height: 100%;
+}
+.fotografia4{
+  display: flex;
+  justify-content: center;
+  width: 33.3%;
+  height:42%;
+}
+.hijo--footer2{
+  border: 6px solid  rgb(0, 255, 8);
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 255, 8);
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  text-decoration: none;
+  text-align: center;
+  align-items: center;
+  font-family: Helvetica;
+  font-weight: bold;
+  font-size: large;
+  margin: 0 auto;
+  
+  width: 50%;
+  height: 10%;
+
+}
+       .hijo--footer2:hover{
+        font-size: larger;
+        font-weight: bolder;
+        transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+       }
+/* FORMULARIO */
+.cajaFormulario{
+
+  display: flex;
+  background-image: url(../img/pyramids.jpg);
+  image-resolution: 80%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+ /*  border: 6px solid red; */
+  height: 50%;
+  width: 90%;
+  background-position: -500px -100px; /* para mpver el fondo como queramos */
+  margin: 10px auto;
+  /* ANIMACIÓN */
+  overflow: hidden; /* para que aparezca el texto de un lado, oculto */
+  animation: backBanner 10s linear;
+}
+          .form{
+
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+             /*  border: 6px solid rgb(188, 20, 174); */
+              width: 100%;
+              height: 90%;
+              animation: fromRigtht 10000ms linear;/* animación */
+            }
+            
+                      @keyframes fromRigtht{ /* para que aparezca desde derecha (X) */
+                               from{
+                                    transform: translateX(200%);
+                                  }
+                                to{
+                                     transform: translateX(0%);
+                                  }
+                      }
+          
+
+                 input{
+
+                     display: flex;
+                     justify-content: center;
+                     margin: 0 auto; 
+                     margin-top:5px;
+                     flex-direction: column;
+                     border-radius: 6px;
+                     border-style: solid;
+                     border-color:  rgb(255, 188, 220);
+                     text-decoration: none;
+                     text-align: left;
+                     align-content: left;
+                     padding-left: 2%;
+                     font-size: 15px;
+                     background-color: rgb(255, 255, 255);
+                     width: 40%;
+                     height: 12%;
+                     
+                 }
+                 .button{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: row;
+                    margin: 0 auto;
+                    margin-top: 5px;
+                    align-items: center;
+                    background-color: rgb(255, 188, 220);
+                    color: white;
+                    font-size: 15px;
+                    font-weight: bold;
+                    border-style: none;
+                    border-radius: 6px;
+
+                    height: 12%;
+                    width: 40%;
+                
+                 }
+                 .button:hover{
+                  font-style: oblique;
+                  color: black;
+                 }
+                 .hijo--titulo3{
+
+                  background-color: rgb(255, 255, 255);
+                  display: flex;
+                  flex-direction:row;
+                  justify-content: right;
+                  text-decoration: none;
+                  align-items: center;
+                  font-family: Georgia;
+                  font-size: small;
+                  color:  rgb(0, 0, 0);
+                
+                  width: 98%;
+                  height: 3%;
+                }
